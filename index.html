@@ -31,17 +31,18 @@ body { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; overflow-x:
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
 
-<!-- NAVBAR RESPONSIF -->
-<div id="navbar" class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-4xl px-4 navbar-visible">
-  <div class="backdrop-blur-md bg-slate-900/60 border border-purple-500/20 rounded-full shadow-lg p-1 card-hover">
+<!-- NAVBAR RESPONSIF (FIX MOBILE) -->
+<div id="navbar" class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 
+                    w-[95%] sm:w-full sm:max-w-4xl px-2 sm:px-4 navbar-visible">
+  <div class="backdrop-blur-md bg-slate-900/60 border border-purple-500/20 rounded-full shadow-lg p-1 card-hover w-full">
     
     <!-- Desktop Menu -->
     <div class="navbar min-h-0 hidden md:flex">
-      <div class="flex-1 justify-start ml-8">
-        <a href="#" class="text-xl font-bold gradient-text">Portofolio</a>
+      <div class="flex-1 justify-start ml-6 sm:ml-8">
+        <a href="#" class="text-lg sm:text-xl font-bold gradient-text">Portofolio</a>
       </div>
       <div class="flex-none">
-        <ul class="menu menu-horizontal mr-6 px-1 space-x-1 text-sm">
+        <ul class="menu menu-horizontal mr-4 sm:mr-6 px-1 space-x-1 text-xs sm:text-sm">
           <li><a href="#about" class="btn btn-ghost btn-xs rounded-lg text-gray-300 hover:text-purple-400 btn-hover">Tentang</a></li>
           <li><a href="#education" class="btn btn-ghost btn-xs rounded-lg text-gray-300 hover:text-purple-400 btn-hover">Pendidikan</a></li>
           <li><a href="#skills" class="btn btn-ghost btn-xs rounded-lg text-gray-300 hover:text-purple-400 btn-hover">Keahlian</a></li>
@@ -52,13 +53,13 @@ body { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; overflow-x:
     </div>
 
     <!-- Mobile Menu (Hamburger) -->
-    <div class="navbar min-h-0 md:hidden">
-      <div class="flex-1 justify-start ml-4">
-        <a href="#" class="text-lg font-bold gradient-text">Portofolio</a>
+    <div class="navbar min-h-0 md:hidden flex">
+      <div class="flex-1 justify-start ml-3">
+        <a href="#" class="text-base font-bold gradient-text">Portofolio</a>
       </div>
       <div class="flex-none">
-        <label for="nav-drawer" class="btn btn-ghost btn-circle text-purple-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <label for="nav-drawer" class="btn btn-ghost btn-circle text-purple-400 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
@@ -68,19 +69,19 @@ body { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; overflow-x:
   </div>
 </div>
 
-<!-- DRAWER MOBILE (Hamburger Menu) -->
+<!-- DRAWER MOBILE -->
 <input type="checkbox" id="nav-drawer" class="drawer-toggle" />
 <div class="drawer-side z-[9999]">
   <label for="nav-drawer" class="drawer-overlay"></label>
   <ul class="menu p-6 w-80 h-full bg-slate-900/95 backdrop-blur-xl text-base-content border-r border-purple-500/30">
-    <li class="mb-4">
+    <li class="mb-6">
       <a href="#" class="text-2xl font-bold gradient-text">Portofolio</a>
     </li>
-    <li><a href="#about" class="text-lg text-purple-300 hover:text-white">Tentang</a></li>
-    <li><a href="#education" class="text-lg text-purple-300 hover:text-white">Pendidikan</a></li>
-    <li><a href="#skills" class="text-lg text-purple-300 hover:text-white">Keahlian</a></li>
-    <li><a href="#projects" class="text-lg text-purple-300 hover:text-white">Project</a></li>
-    <li><a href="#contact" class="text-lg text-purple-300 hover:text-white">Kontak</a></li>
+    <li><a href="#about" class="text-lg text-purple-300 hover:text-white py-3 rounded-lg hover:bg-purple-600/30">Tentang</a></li>
+    <li><a href="#education" class="text-lg text-purple-300 hover:text-white py-3 rounded-lg hover:bg-purple-600/30">Pendidikan</a></li>
+    <li><a href="#skills" class="text-lg text-purple-300 hover:text-white py-3 rounded-lg hover:bg-purple-600/30">Keahlian</a></li>
+    <li><a href="#projects" class="text-lg text-purple-300 hover:text-white py-3 rounded-lg hover:bg-purple-600/30">Project</a></li>
+    <li><a href="#contact" class="text-lg text-purple-300 hover:text-white py-3 rounded-lg hover:bg-purple-600/30">Kontak</a></li>
   </ul>
 </div>
 
